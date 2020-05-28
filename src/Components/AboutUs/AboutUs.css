@@ -1,0 +1,7 @@
+.pimg2 {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/30/Mamelodi.JPG');
+    min-height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
