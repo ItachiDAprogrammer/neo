@@ -2,11 +2,11 @@ import React from "react";
 
 const Team_Members = (props) => {
     const prop = props.members
-  return (
-    <div>
+    return (
+        <div>
       <section>
-        <div className="team-card">
-          <img src={prop.img} className="team-img" />
+        <div >
+          <img src={prop.img} className={"team-img"} />
           {/* <h3 className="team-name"> {props.details.name}</h3> */}
           <h3 className="team-title">{prop.name} </h3>
   <p>{prop.title}</p>
@@ -14,7 +14,7 @@ const Team_Members = (props) => {
       </section>
     
     </div>
-  );
+    );
 };
 
 export default Team_Members;
