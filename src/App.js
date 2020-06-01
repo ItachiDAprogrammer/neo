@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import Nav from './Components/Nav/Nav';
 import Home from './Components/Home/Home'
+import Team from './Components/Team/Team'
+import { Route, Switch } from 'react-router-dom'
 
 
 function App() {
@@ -9,7 +11,11 @@ function App() {
         /* beautify preserve:start */
         <div>
         <Nav />
-        <Home />
+        <Switch>
+			<Route exact path='/' component={Home} />
+			<Route path='/team' component={Team} />
+        </Switch>
+        
         </div>
         /* beautify preserve:end */
     );

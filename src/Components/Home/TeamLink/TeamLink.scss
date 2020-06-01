@@ -3,12 +3,59 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 15rem;
 
+    margin-top: 40px;
+
     .col-a {
-        background: red;
+        display: flex;
+        justify-content: center;
+
+        .img {
+            background: blue;
+            width: 60%;
+        }
     }
 
 
     .col-b {
-        background: blue;
+
+        text-align: center;
+        margin-right: 30px;
+
+        h2 {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
+.btn-container {
+    text-align: center;
+
+    .btn {
+        text-align: center;
+        background: #39b7dd;
+        text-align: center;
+        padding: 15px;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .col-b {
+        margin: 10px;
+
+        P {
+            text-align: start;
+        }
     }
 }

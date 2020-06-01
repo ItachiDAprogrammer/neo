@@ -1,7 +1,8 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
 }
+
 body,
 html {
     height: 100%;
@@ -12,13 +13,17 @@ html {
     line-height: 1.8em;
     color: #666;
 }
-.pimg1, .pimg2, .pimg3{
-    background-position:center;
-    background-size:cover;
-    background-repeat:no-repeat;
-  }
+
+.pimg1,
+.pimg2,
+.pimg3 {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .ptext {
-    width:100%;
+    width: 100%;
     text-align: center;
     color: #ffffff;
     font-size: 27px;
@@ -26,6 +31,7 @@ html {
     text-transform: uppercase;
     line-height: 50px;
 }
+
 .section {
     text-align: center;
     padding: 50px 80px;
@@ -40,17 +46,18 @@ html {
     background-color: #282e34;
     color: #ddd;
 }
-.ptext .border{
-    background-color:#111;
-    color:#fff;
-    padding:20px;
+
+.ptext .border {
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
     font-size: xx-large;
-  }
-  
-  .ptext .border.trans{
-    background-color:transparent;
-  }
-  
+}
+
+.ptext .border.trans {
+    background-color: transparent
+}
+
 
 @media screen and (max-width: 768px) {
     .ptext {
@@ -59,18 +66,10 @@ html {
         line-height: 20px;
         letter-spacing: 6px;
     }
+
     .section {
         text-align: start;
         padding: 30px 50px;
     }
-.section-light {
-    background-color: #cec6c6;
-    color: rgb(83, 80, 80);
-}
-
-.section-dark {
-    background-color: #282e34;
-    color: #ddd;
-}
 
 }

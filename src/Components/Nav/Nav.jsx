@@ -10,6 +10,11 @@ const Nav = () => {
         navLinks.classList.toggle('open')
         links.forEach(link => link.classList.toggle('fade'))
     }
+    const close = () => {
+        const links = document.querySelectorAll('.nav-links li')
+        links.addEventListener('clic', handleBurgerClick())
+
+    }
 
     return (<div>
       <nav>

@@ -1,21 +1,26 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './TeamLink.scss'
 
 const TeamLink = () => {
     return (
         <div>
 			<div className="container">
-				<div className="col-a"></div>
+				<div className="col-a">
+					<div className="img">
+						
+					</div>
+				</div>
 				<div className="col-b">
 					<h2>Lorem ipsum dolor sit amet</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae quo, 
 					vero voluptate perspiciatis nihil laboriosam tenetur exercitationem sit atque 
-					illum. Voluptatibus veniam quia illo eos aperiam incidunt! Eaque, tempora! Beatae 
-					laudantium, itaque accusantium ea, autem voluptate eos placeat ipsum id enim nihil, 
-					vel ullam asperiores deserunt nemo. Nam iste, tempore.</p>
+					illum. Voluptatibus veniam quia</p>
 				</div>
 			</div>
-			<div className="btn"></div>
+			<div className="btn-container">
+				<Link className="btn" to="team">see team</Link>
+			</div>
 		</div>
     )
 }
