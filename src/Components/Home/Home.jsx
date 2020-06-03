@@ -11,8 +11,8 @@ const Home = () => {
 			<Header />
 			<About />
    			<AboutUs />
-   			<Donate />
    			<TeamLink />
+   			<Donate />
 		</div>
     )
 }

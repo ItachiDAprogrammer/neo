@@ -1,11 +1,13 @@
 import React from "react";
+import "./Team_Members.scss"
+
 
 const Team_Members = (props) => {
     const prop = props.members
     return (
         <div>
         <section>
-          <div className="img">
+          <div className="container">
             <img src={prop.img} className={"team-img"}  alt={"img"}/>
           </div>
 
