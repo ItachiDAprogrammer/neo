@@ -1,20 +1,20 @@
 import React from 'react'
-import Button from 'react-bootstrap/button'
+import Container from 'react-bootstrap/Container'
+import { Link } from 'react-router-dom'
+import Wrepper from './Styles'
+
 
 const TeamLink = () => {
+
     return (
-        <div>
-			<>
-  <Button variant="outline-primary">Primary</Button>{' '}
-  <Button variant="outline-secondary">Secondary</Button>{' '}
-  <Button variant="outline-success">Success</Button>{' '}
-  <Button variant="outline-warning">Warning</Button>{' '}
-  <Button variant="outline-danger">Danger</Button>{' '}
-  <Button variant="outline-info">Info</Button>{' '}
-  <Button variant="outline-light">Light</Button>{' '}
-  <Button variant="outline-dark">Dark</Button>
-</>
-		</div>
+
+        <Wrepper>
+      <img src="https://images.unsplash.com/photo-1591155426209-23831d47700d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" rounded />
+      <div className="link">
+    	<Link id = 'link'to = '/team' > See Team </Link>
+      </div>
+
+    	</Wrepper>
     )
 }
 

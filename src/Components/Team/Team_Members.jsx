@@ -1,5 +1,5 @@
 import React from "react";
-import "./Team_Members.scss"
+
 
 
 const Team_Members = (props) => {

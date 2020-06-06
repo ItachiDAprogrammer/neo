@@ -7,7 +7,7 @@ const Team = () => {
 
 
     return (
-        <div >
+        <div className="container">
       {teamData.map(data => <Team_Members members={data} />)}
     </div>
     );
