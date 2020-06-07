@@ -1,20 +1,26 @@
 import React from 'react'
-import Container from 'react-bootstrap/Container'
 import { Link } from 'react-router-dom'
-import Wrepper from './Styles'
+import styles from './TeamLink.module.scss'
+console.log(styles)
 
 
 const TeamLink = () => {
 
     return (
 
-        <Wrepper>
-      <img src="https://images.unsplash.com/photo-1591155426209-23831d47700d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" rounded />
-      <div className="link">
-    	<Link id = 'link'to = '/team' > See Team </Link>
-      </div>
+        <div className={styles.container}>
 
-    	</Wrepper>
+      		<img src="https://images.unsplash.com/photo-1591155426209-23831d47700d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
+
+     		<div className={styles.discription}>
+      			<h2>Get to know the team</h2>
+      			<p>click the botton below to get to the team behind <span>Teans With Vission</span> better</p>
+      		</div>
+
+      		<div className={styles.link}>
+    			<Link id = {styles.link} to = '/team' > See Team </Link>
+      		</div>
+        </div>
     )
 }
 

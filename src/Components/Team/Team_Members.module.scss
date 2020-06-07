@@ -1,0 +1,4 @@
+.wrap {
+    display: flex;
+    grid-template-columns: auto-fit, minmax(400px, 1fr)
+}

@@ -2,14 +2,14 @@ import React from "react"
 import './Donate.css'
 
 const Donate = () => {
-  return (
-    <div>
+    return (
+        <div>
       <div className="pimg3">
         <div className="ptext">
           <span className="border trans">Help us rich our goal</span>
         </div>
       </div>
-      <section className="section section-light">
+      <section className="section section-dark">
         <h2>Make a Donation</h2>
         <h4>Your Support Makes a World of Difference</h4>
         <p>
@@ -22,7 +22,7 @@ const Donate = () => {
         </p>
       </section>
     </div>
-  );
+    );
 };
 
 export default Donate;
