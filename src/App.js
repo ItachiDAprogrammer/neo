@@ -5,12 +5,13 @@ import Home from './Components/Home/Home'
 import Team from './Components/Team/Team'
 import Gallery from './Components/Gallery/Gallery'
 import { Route, Switch } from 'react-router-dom'
+import SimpleReactLightbox from "simple-react-lightbox"
 
 
 function App() {
     return (
         /* beautify preserve:start */
-        <div>
+        <SimpleReactLightbox>
         <Nav />
         <Switch>
 			<Route exact path='/' component={Home} />
@@ -18,7 +19,7 @@ function App() {
             <Route path='/gallery' component={Gallery} />
         </Switch>
         
-        </div>
+        </SimpleReactLightbox>
         /* beautify preserve:end */
     );
 }
