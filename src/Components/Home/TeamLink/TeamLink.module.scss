@@ -26,11 +26,14 @@
             font-weight: bolder;
             font-size: 3em;
             letter-spacing: 0.1em;
+            margin-bottom: 4rem;
+            text-transform: uppercase;
         }
 
         p {
             font-size: 1.3em;
-            letter-spacing: 1.7px
+            letter-spacing: 1.7px;
+
         }
 
     }
@@ -76,12 +79,28 @@
 
     .link {
         text-align: center;
+        margin: 0px !important;
+        padding: 20px 0px !important;
     }
 
     img {
         display: block;
         margin: 0 auto;
         width: 50%;
+    }
+
+    h2 {
+
+        font-weight: bold;
+        font-size: 1.5em;
+        letter-spacing: 0.1em;
+        line-height: 50px;
+        margin-bottom: 1rem !important;
+    }
+
+    p {
+        font-size: 1em;
+        letter-spacing: 1.5px
     }
 
 }
