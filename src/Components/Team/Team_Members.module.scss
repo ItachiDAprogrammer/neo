@@ -1,4 +1,37 @@
 .wrap {
-    display: flex;
-    grid-template-columns: auto-fit, minmax(400px, 1fr)
+    display: grid;
+    height: 100%;
+    // flex-wrap: wrap;
+    // justify-content: space-around;
+    // align-content: space-around;
+    // text-align: center;
+
+    grid-template-columns: 1fr 1fr 1fr;
+justify-items: center;
+grid-gap: 40px;
+    .img {
+        width: 30%;
+
+        img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        grid-gap: 10px;
+
+    }
+
+    img {
+        width: 20px;
+        height: auto;
+    }
 }

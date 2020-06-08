@@ -1,54 +1,37 @@
-import React, { useEffect } from "react";
+import React from 'react'
 import { Link } from 'react-router-dom'
-import './Nav.css'
+
 
 const Nav = () => {
-    const handleBurgerClick = () => {
-        const navLinks = document.querySelector('.nav-links')
-        const links = document.querySelectorAll('.nav-links li')
+    return (
+        <div>
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <Link class="navbar-brand" to="/">LOGO</Link>
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        navLinks.classList.toggle('open')
-        links.forEach(link => link.classList.toggle('fade'))
-    }
-    const close = () => {
-        const links = document.querySelectorAll('.nav-links li')
-        links.addEventListener('clic', handleBurgerClick())
+    <div class="navbar-collapse collapse" id="navbarColor01" >
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <Link class="nav-link" to="/">Home <span class="sr-only">(current)</span></Link>
+          
+        </li>
+        <li class="nav-item">
+          <Link class="nav-link" to="/team">Team</Link>
+        </li>
+        <li class="nav-item">
+          <Link class="nav-link" to="/gallery">Gallery</Link>
+        </li>
+        <li class="nav-item">
+          <Link class="nav-link" to="/contact">Contact Us</Link>
+        </li>
+      </ul>
+      
+    </div>
+  </nav>
+    </div>
+    )
+}
 
-    }
-
-    return (<div>
-      <nav>
-        <div onClick={handleBurgerClick} className="burger" >
-          <div className="line"></div>
-          <div className="line"></div>
-          <div className="line"></div>
-        </div>
-        <ul className="nav-links">
-          <li>
-          <Link to="/">Home</Link>
-          </li>
-          <li>
-          <Link to="/about" >about</Link>
-          </li>
-          <li>
-          <Link to="/mission" >Mission</Link>
-          </li>
-          <li>
-          <Link to="/donate" >Donate</Link>
-          </li>
-          <li>
-          <Link to="/team" >Team</Link>
-          </li>
-          <li>
-          <Link to="/contact" >Contact</Link>
-          </li>
-          <li>
-          <Link to="/gallery" >Gallery</Link>
-          </li>
-        </ul>
-      </nav>
-
-    </div>);
-};
-
-export default Nav;
+export default Nav
