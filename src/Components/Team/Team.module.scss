@@ -7,11 +7,11 @@
 .wrap {
 
     display: grid;
-    gap: 20px;
+    width: 100%;
     justify-items: center;
     text-align: center;
     padding-top: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
 
     img {
         width: 300px;
@@ -31,3 +31,29 @@
 }
 
 .name {}
+
+@media screen and (max-width: 1250px) {
+    .wrap {
+        grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    }
+
+    .discb {
+        padding: 15px;
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+    .wrap {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+
+
+}
+
+@media screen and (max-width: 420px) {
+    .wrap {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}

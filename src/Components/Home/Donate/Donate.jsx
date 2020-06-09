@@ -5,9 +5,6 @@ const Donate = () => {
     return (
         <div>
       <div className="pimg3">
-        <div className="ptext">
-          <span className="border trans">Help us rich our goal</span>
-        </div>
       </div>
       <section className="section section-dark">
         <h2>Make a Donation</h2>
@@ -20,6 +17,8 @@ const Donate = () => {
           you to create an impact on our youth. Donate now, and make a
           difference in the lives of our people and those who need our help.
         </p>
+
+      <h5 style={{color:'red'}}>info needed about donatins</h5>
       </section>
     </div>
     );

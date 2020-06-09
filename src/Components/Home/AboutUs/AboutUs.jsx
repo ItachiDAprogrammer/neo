@@ -2,12 +2,9 @@ import React from "react";
 import './AboutUs.css'
 
 const AboutUs = () => {
-  return (
-    <div>
+    return (
+        <div>
       <div className="pimg2">
-        <div className="ptext">
-          <span className="border trans">Image Two Text</span>
-        </div>
       </div>
       <section className="section section-dark">
         <h2>Get to Know Us</h2>
@@ -24,7 +21,7 @@ const AboutUs = () => {
         </p>
       </section>
     </div>
-  );
+    );
 };
 
 export default AboutUs;

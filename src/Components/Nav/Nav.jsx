@@ -1,20 +1,22 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Nav.css'
+import logo from "../../assets/logo.png"
 
 
 const Nav = () => {
     return (
         <div>
         <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-    <Link class="navbar-brand" to="/">LOGO</Link>
+    <Link class="navbar-brand" to="/"><img style={{width:'2.3rem'}} src={logo} alt="logo"/></Link>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="navbar-collapse collapse" id="navbarColor01" >
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item ">
+        <li class="nav-item 
+        ">
           <Link class="nav-link" to="/">Home <span class="sr-only">(current)</span></Link>
           
         </li>

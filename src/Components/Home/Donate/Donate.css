@@ -4,3 +4,25 @@
     display: flex;
     align-items: center;
 }
+
+.ptext {
+    margin: auto
+}
+
+.frame {
+    font-size: 2.5rem;
+    line-height: 30px;
+    letter-spacing: 5px;
+    border: 1px solid transparent;
+    color: white;
+    background-color: rgba(106, 88, 72, 0.6);
+    padding: 20px;
+}
+
+@media and (max-width: 600px) {
+    .frame {
+        font-size: 10px;
+        line-height: 15px;
+        padding: 0px;
+    }
+}

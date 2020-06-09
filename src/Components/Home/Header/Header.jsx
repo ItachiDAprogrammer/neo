@@ -5,11 +5,11 @@ const Header = () => {
     return (
         <div>
         <div className="pimg1">
-            <div className="main-header ptext">
-                <img id='logo-big' src={logo}/>
-                <h1>Teens With Vision</h1>
-                <p>Young, powerful, and fantastic minds</p>
-        </div>
+        <img id='logo-big' src={logo}/>
+            <div className="main-header">
+                <h1 className='hh1'>Teens With Vision</h1>
+                <p className='hh2'>Young, powerful, and fantastic minds</p>
+            </div>
         </div>
        </div>
     )
