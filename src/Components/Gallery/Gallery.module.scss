@@ -15,11 +15,11 @@
     width: 100% !important;
     height: auto !important;
     padding: 2px;
+}
 
-    &:hovor {
-        width: 110% !important;
-        ;
-    }
+img:hover {
+    width: 110% !important;
+    z-index: 1;
 }
 
 
@@ -49,13 +49,8 @@
 
 @media (max-width: 400px) {
     #photos {
-        -moz-column-count: 1;
-        -webkit-column-count: 1;
-        column-count: 1;
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
     }
-}
-
-body {
-    margin: 0;
-    padding: 0;
 }
