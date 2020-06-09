@@ -7,13 +7,15 @@
     grid-template-columns: 1fr 1fr;
 
     .img {
-        width: 100%
+
+        width: 100%;
+        // justify-self: center;
+        // align-self: center;
     }
 
     img {
         width: 100%;
-        justify-self: center;
-        align-self: center;
+
     }
 
     .discription {

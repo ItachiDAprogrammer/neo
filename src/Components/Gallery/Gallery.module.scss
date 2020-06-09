@@ -1,4 +1,5 @@
 #photos {
+    background-color: #c9c5c5;
     /* Prevent vertical gaps */
     line-height: 0;
 
@@ -15,11 +16,6 @@
     width: 100% !important;
     height: auto !important;
     padding: 2px;
-}
-
-img:hover {
-    width: 110% !important;
-    z-index: 1;
 }
 
 

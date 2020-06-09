@@ -4,6 +4,7 @@ import Nav from './Components/Nav/Nav';
 import Home from './Components/Home/Home'
 import Team from './Components/Team/Team'
 import Gallery from './Components/Gallery/Gallery'
+import Footer from './Components/Footer/Footer'
 import { Route, Switch } from 'react-router-dom'
 import SimpleReactLightbox from "simple-react-lightbox"
 
@@ -18,6 +19,7 @@ function App() {
 			<Route path='/team' component={Team} />
             <Route path='/gallery' component={Gallery} />
         </Switch>
+        <Footer />
         
         </SimpleReactLightbox>
         /* beautify preserve:end */

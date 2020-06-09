@@ -1,4 +1,5 @@
 import React from "react";
+import styles from './Team.module.scss'
 
 
 
@@ -8,15 +9,10 @@ const Team_Members = (props) => {
     const prop = props.members
     return (
         <div className={styles.wrap}>
-          <div className={styles.img}>
-            <img src={prop.img}  alt={"img"}/>
-          </div>
-
-          <div className={styles.caption} >
+            <img  src={prop.img}  alt={"img"}/>
             <h3 className={styles.title}>{prop.name} </h3>
-            <p>{props.title}</p>
+            <p>{prop.title}</p>
         </div>
-    </div>
     );
 };
 

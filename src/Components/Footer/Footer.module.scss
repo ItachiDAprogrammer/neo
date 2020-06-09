@@ -1,0 +1,21 @@
+.footer {
+    background: #121415;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: white;
+    width: 100%;
+    height: 20vh;
+}
+
+
+
+.copyRights {
+    color: gray;
+    font-size: 12px;
+    position: relative;
+    bottom: 8px;
+    right: 16px;
+    font-size: 18px;
+
+}

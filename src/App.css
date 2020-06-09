@@ -11,7 +11,7 @@ html {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     line-height: 1.8em;
-    color: #666;
+    color: #5e5e5e;
 }
 
 .pimg1,
@@ -25,7 +25,6 @@ html {
 .ptext {
     width: 100%;
     text-align: center;
-    color: #ffffff;
     font-size: 27px;
     letter-spacing: 8px;
     text-transform: uppercase;
@@ -49,24 +48,29 @@ html {
 }
 
 .ptext .border {
-    background-color: #111;
     color: #fff;
-    padding: 20px;
+    padding: 15px;
     font-size: xx-large;
 }
 
 .ptext .border.trans {
-    background-color: transparent
+    background-color: rgba(106, 88, 72, 0.6)
 }
-
 
 @media screen and (max-width: 768px) {
     .ptext {
-        text-align: center;
-        font-size: 12px;
-        line-height: 20px;
-        letter-spacing: 6px;
+        font-size: 1rem;
+        line-height: 30px;
+        letter-spacing: 3px;
     }
+
+    /* .ptext {
+    width: 100%;
+    text-align: center;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    line-height: 50px; */
 
     .section {
         text-align: start;

@@ -10,7 +10,7 @@ const Gallery = () => {
     return (
 
 
-        <div id={styles.photos}>
+        <div id = { styles.photos }>
         <SRLWrapper>
         	{images }
         	</SRLWrapper>
